@@ -53,4 +53,30 @@ describe('test for Calculator', ()=>{
 
 
     });
+
+    describe('Test for Jazmin matchers', ()=>{
+
+      it('matchers', ()=>{
+
+          let name= 'Liss';
+          let name2;
+          //Act & Assert
+          expect (name).toBeDefined();
+          expect(name2).toBeUndefined();
+
+          expect(1+3==4).toBeTruthy();
+          expect(1+4==3).toBeFalse();
+
+          expect(5).toBeLessThan(10);
+          expect(20).toBeGreaterThanOrEqual(15);
+
+          expect('Liseth Poma').toMatch(/set/);
+
+          expect(["perro", "gato", "loro", "vaca"]).toContain("vaca");
+
+      });
+
+  });
+
+
 });
