@@ -54,26 +54,27 @@ describe('test for Calculator', ()=>{
 
     });
 
+    // Test using Jazmin
     describe('Test for Jazmin matchers', ()=>{
-
       it('matchers', ()=>{
-
           let name= 'Liss';
           let name2;
           //Act & Assert
+          // name is defined
           expect (name).toBeDefined();
+          // name2 not is defined
           expect(name2).toBeUndefined();
-
+          // 1+3 =4 is True
           expect(1+3==4).toBeTruthy();
+          // 1+4 = 3 is false
           expect(1+4==3).toBeFalse();
-
+          // 5 is less than 10
           expect(5).toBeLessThan(10);
+          // 20 is greater than or equal to 15
           expect(20).toBeGreaterThanOrEqual(15);
-
-          expect('Liseth Poma').toMatch(/set/);
-
+          expect('Angel Patiño').toMatch(/set/);
+          // contains the word "vaca" in array
           expect(["perro", "gato", "loro", "vaca"]).toContain("vaca");
-
       });
 
   });

@@ -1,0 +1,85 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <label for="textField">Text:</label>
+  <input id="textField" type="text" formControlName="textField">
+  <br>
+
+  <label for="passwordField">Password:</label>
+  <input id="passwordField" type="password" formControlName="passwordField">
+  <br>
+
+  <label for="emailField">Email:</label>
+  <input id="emailField" type="email" formControlName="emailField">
+  <br>
+
+  <label for="numberField">Number:</label>
+  <input id="numberField" type="number" formControlName="numberField">
+  <br>
+
+  <label for="dateField">Date:</label>
+  <input id="dateField" type="date" formControlName="dateField">
+  <br>
+
+  <label for="timeField">Time:</label>
+  <input id="timeField" type="time" formControlName="timeField">
+  <br>
+
+  <label for="colorField">Color:</label>
+  <input id="colorField" type="color" formControlName="colorField">
+  <br>
+
+  <label for="checkboxField">Checkbox:</label>
+  <input id="checkboxField" type="checkbox" formControlName="checkboxField">
+  <br>
+
+  <label for="radioField1">Radio 1:</label>
+  <input id="radioField1" type="radio" formControlName="radioField" value="option1">
+  <label for="radioField2">Radio 2:</label>
+  <input id="radioField2" type="radio" formControlName="radioField" value="option2">
+  <br>
+
+  <label for="selectField">Select:</label>
+  <select id="selectField" formControlName="selectField">
+    <option value="">Please select</option>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+  </select>
+  <br>
+
+  <label for="fileField">File:</label>
+  <input id="fileField" type="file" formControlName="fileField">
+  <br>
+
+  <label for="textareaField">Textarea:</label>
+  <textarea id="textareaField" formControlName="textareaField"></textarea>
+  <br>
+
+  <label for="rangeField">Range:</label>
+  <input id="rangeField" type="range" formControlName="rangeField" min="0" max="100">
+  <br>
+
+  <label for="urlField">URL:</label>
+  <input id="urlField" type="url" formControlName="urlField">
+  <br>
+
+  <label for="searchField">Search:</label>
+  <input id="searchField" type="search" formControlName="searchField">
+  <br>
+
+  <label for="telField">Tel:</label>
+  <input id="telField" type="tel" formControlName="telField">
+  <br>
+
+  <label for="datetimeLocalField">Datetime Local:</label>
+  <input id="datetimeLocalField" type="datetime-local" formControlName="datetimeLocalField">
+  <br>
+
+  <label for="monthField">Month:</label>
+  <input id="monthField" type="month" formControlName="monthField">
+  <br>
+
+  <label for="weekField">Week:</label>
+  <input id="weekField" type="week" formControlName="weekField">
+  <br>
+
+  <button type="submit">Submit</button>
+</form>
